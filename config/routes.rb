@@ -1,4 +1,7 @@
 Versus::Application.routes.draw do
+  resources :proposals
+
+
   authenticated :user do
     root :to => 'home#index'
   end

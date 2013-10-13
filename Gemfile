@@ -12,6 +12,8 @@ gem 'figaro'
 gem 'haml-rails'
 gem 'mongoid'
 gem 'thin'
+gem 'mongoid_commentable'
+gem 'voteable_mongo'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
