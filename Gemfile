@@ -5,6 +5,8 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'compass-rails'
+  gem 'zurb-foundation'
 end
 gem 'jquery-rails'
 gem 'devise'
@@ -14,6 +16,12 @@ gem 'mongoid'
 gem 'thin'
 gem 'mongoid_commentable'
 gem 'voteable_mongo'
+gem 'cancan'
+gem 'rails_admin'
+gem 'state_machine'
+gem 'rails_admin_state'
+gem 'simple_form'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]

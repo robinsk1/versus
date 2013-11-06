@@ -1,0 +1,21 @@
+%h1 Listing opponents
+
+%table
+  %tr
+    %th Name
+    %th Description
+    %th
+    %th
+    %th
+
+  - @opponents.each do |opponent|
+    %tr
+      %td= opponent.name
+      %td= opponent.description
+      %td= link_to 'Show', opponent
+      %td= link_to 'Edit', edit_opponent_path(opponent)
+      %td= link_to 'Destroy', opponent, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Opponent', new_opponent_path

@@ -1,4 +1,11 @@
 %h3 Home
-- @users.each do |user|
+
+- @comparisons.each do |comparison|
   %p
-    User: #{link_to user.name, user}
+    comparison.title
+  %p
+    comparison.description
+    
+
+= link_to 'create new comparison', new_comparison_path
+

@@ -1,0 +1,17 @@
+%h1 Listing proposals
+
+%table
+  %tr
+    %th
+    %th
+    %th
+
+  - @comparisons.each do |comparison|
+    %tr
+      %td= link_to 'Show', comparison
+      %td= link_to 'Edit', edit_comparison_path(proposal)
+      %td= link_to 'Destroy', comparison, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Comparison', new_comparison_path
